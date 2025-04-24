@@ -10,28 +10,6 @@ Uma API simples para gerenciamento de livros com operações CRUD básicas.
 - Git
 - Ferramenta para testar APIs (Postman/curl)
 
-### Instalação
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/biblioteca.git
-cd biblioteca
-```
-2. Instale as dependências:
-```bash
-go mod download
-```
-3. Configure o banco de dados:
-```sql
-CREATE DATABASE biblioteca;
-```
-4. Atualize a string de conexão em src/db/conn.go:
-```go
-dsn := "host=localhost user=postgres password=sua_senha dbname=biblioteca port=5432 sslmode=disable"
-```
-5. Execute as migrações:
-```bash
-go run cmd/main.go
-```
 ### 📋 Endpoints da API
 1. Criar Livro
 ```http request
